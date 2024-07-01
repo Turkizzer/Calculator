@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body
+    class="bg-[url('https://www.ces-schools.net/wp-content/uploads/2020/07/AdobeStock_234287116-scaled.jpeg')] bg-cover bg-center"
+  >
+    <header class="text-center pt-16">
+      <h1 class="text-6xl font-extrabold">Calculator</h1>
+      <h3 class="text-3xl mt-6 italic">I love math!</h3>
+    </header>
+    <main>
+      <section class="flex mt-20 items-center h-screen flex-col w-full">
+        <div class="w-94 p-8 rounded-3xl bg-black text-white">
+          <input
+            class="border-2 border-black text-black w-full h-14 rounded-lg mb-3 cursor-default"
+            readonly
+            id="inputs"
+            type="text"
+          />
+          <div class="grid grid-cols-4 gap-y-2 gap-x-2">
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-slate-300 text-black"
+              onclick="clears()"
+            >
+              AC
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-slate-300 text-black"
+              onclick="negatives()"
+            >
+              +/-
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-slate-300 text-black"
+              id="modulo"
+              onclick="percents()"
+            >
+              %
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-orange-400 text-black"
+              id="devide"
+              onclick="user('/')"
+            >
+              /
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="seven"
+              onclick="user('7')"
+            >
+              7
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="eight"
+              onclick="user('8')"
+            >
+              8
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="nine"
+              onclick="user('9')"
+            >
+              9
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-orange-400 text-black"
+              id="multiply"
+              onclick="user('*')"
+            >
+              X
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="four"
+              onclick="user('4')"
+            >
+              4
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="five"
+              onclick="user('5')"
+            >
+              5
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="six"
+              onclick="user('6')"
+            >
+              6
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-orange-400 text-black"
+            >
+              -
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="one"
+              onclick="user('1')"
+            >
+              1
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="two"
+              onclick="user('2')"
+            >
+              2
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="three"
+              onclick="user('3')"
+            >
+              3
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-orange-400 text-black"
+            >
+              +
+            </button>
+            <button
+              class="border-2 rounded-2xl w-32 h-12 col-span-2"
+              id="zero"
+              onclick="user('0')"
+            >
+              0
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12"
+              id="dot"
+              onclick="addDecimal('.')"
+            >
+              .
+            </button>
+            <button
+              class="border-2 rounded-2xl w-16 h-12 bg-orange-400 text-black"
+              id="equals"
+              onclick="resulta()"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
